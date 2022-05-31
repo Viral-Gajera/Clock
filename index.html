@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-   <head>
+  <body>
 
-    <link rel="stylesheet" href="style.css">
-      
-   </head>
+    <section class="nav-bar">
+        <ul>
+            <li class="active">Clock</li>
+            <li >World Clock</li>
+            <li >StopWatch</li>
+            <li >Timer</li>
+        </ul>
+    </section>
 
-   <body>
+    <section class="animation">
+        <div id="hour-animation"><span></span></div>
+        <div id="minute-animation"><span></span></div>
+        <div id="second-animation"><span></span></div>
+        <div></div>
+    </section>
 
-        <section class="animation" >
-        </section>
+    <section class="numbers">
+      <span style="font-weight: bolder">Time :</span>
+      <p id="hour"></p> h
+      <p id="minutes"></p>min
+      <p id="second"></p>sec
+      <p id="AMPM"></p>
+    </section>
 
-
-        <section class="numbers" >
-            <span style="font-weight:bolder " >Time :</span>
-            <p id="hour"></p> h
-            <p id="minutes"></p> min
-            <p id="second"></p> sec
-            <p id="AMPM"></p>
-        </section>
-
-        <script src="./script.js"></script>
-   </body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
