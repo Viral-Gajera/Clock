@@ -65,6 +65,10 @@ body > *{
     /* border: 2px solid white; */
 }
 
+.nav-bar ul li a{
+    text-decoration: none;
+}
+
 .active{
     border-bottom: 2px solid rgba(255, 255, 255, 0);
     animation: widthChange 1s linear 1 ;
