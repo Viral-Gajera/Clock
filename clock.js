@@ -57,8 +57,6 @@ let h = ( now.getHours() > 12 ? (now.getHours() - 12) : now.getHours() );
 let m = now.getMinutes();
 let s = now.getSeconds();
 
-console.log(h);
-
     h = 30*h + (m/2) + (s/120);
     m = 6*m + (s/10);
     s = 6*s + 6;
