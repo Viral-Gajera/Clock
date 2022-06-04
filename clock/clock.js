@@ -9,16 +9,16 @@ setInterval( function(){
     let h = now.getHours();
 
     // logic for digital clock
-    if(h>12){
-        ampm.innerHTML = 'PM';
-        h = h - 12;
-    }
-    else if( h===12 ){
-        ampm.innerHTML = 'PM';
-    }
-    else{
-        ampm.innerHTML = 'AM';
-    }
+    // if(h>12){
+    //     ampm.innerHTML = 'PM';
+    //     h = h - 12;
+    // }
+    // else if( h===12 ){
+    //     ampm.innerHTML = 'PM';
+    // }
+    // else{
+    //     ampm.innerHTML = 'AM';
+    // }
 
     hour.innerHTML = h.toLocaleString('en-US', {
         minimumIntegerDigits: 2,
