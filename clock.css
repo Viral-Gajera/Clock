@@ -1,5 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:wght@100&family=Mukta&display=swap');
 
-@import url('./common.css');
+:root{
+    /* --color-primary : rgb(119, 242, 195);
+    --color-secondary : rgb(0, 157, 255);
+    --color-third : white; */
+    --color-primary : rgb(0, 0, 0);
+    --color-secondary : rgb(109, 109, 109);
+    --color-third : rgb(255, 255, 255);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    color: var(--color-third);
+    font-family: 'Mukta', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(45deg, var(--color-primary), 
+    var(--color-secondary) );
+
+    width: 100vw;
+    min-height: 100vh;
+
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* navigation bar */
+.nav-bar{
+    width: auto;
+    height: 50px;
+
+    border:0px;
+    /* border-bottom: 2px solid var(--color-third); */
+
+    /* margin: -100px 0px 100px 0px; */
+    position: absolute;
+    top: 0px;
+}
+
+.nav-bar ul{
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-bar ul li{
+    margin: 10px 20px;
+    /* border: 2px solid white; */
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+}
+
+.active{
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    animation: widthChange 0.1s linear 1 ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes widthChange {
+    100%{
+        border-bottom: 2px solid var(--color-third);
+    }
+}
 
 
 /* actual clock */
